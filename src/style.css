@@ -4,22 +4,22 @@ body {
     justify-content: center; align-items: center;
 }
 
+button {
+    border: none;
+    background-color: #0000;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.3, 1.3);
+}
+
 .header-card {
     display: flex; flex-direction: column; justify-content: center; align-items: center;
     padding: 12px;
     border-radius: 12px;
     width: 95vw;
-    box-shadow: 5px 5px 5px 5px #888888;
-    
-    button {
-        border: none;
-        background-color: #0000;
-    }
-
-    button:hover {
-        cursor: pointer;
-        transform: scale(1.3, 1.3);
-    }
+    box-shadow: 5px 5px 5px 5px #888888;    
 }
 
 .header-left {
@@ -72,6 +72,39 @@ body {
     }
 }
 
+main {
+    padding: 16px;
+}
+
+.projects-container {
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+
+    .project {
+        height: 25rem;
+        box-shadow: 2px 2px 5px 5px #888888;
+    }
+
+    .project-top {
+        display: flex; justify-content: center; align-items: center;
+        height: 50%;
+        background-color: blue;
+    }
+    
+    .project-icons {
+        display: flex; flex-direction: row; justify-content: center; align-items: center;
+        float: right;
+        padding: 20px;
+    
+        img {
+            width: 1.5rem;
+        }
+    }
+}
+
+
 @media (min-width: 800px) {
     .header-card {
         display: flex; flex-direction: row;
@@ -92,13 +125,13 @@ body {
         }
     }
 
-    .info-container {
-        #about-me {
-            text-align: center;
-        }
-
-        p {
-            text-align: center;
+    main {
+        padding: 8px;
+        .projects-container {
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 3rem;
         }
     }
 }
