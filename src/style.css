@@ -21,7 +21,6 @@ button:hover {
     width: 90%;
     box-shadow: 5px 5px 5px 5px #888888;    
 }
-
 .header-left {
     width: auto; height: 100%;
     position: relative;
@@ -43,8 +42,6 @@ button:hover {
         transform: translateX(-50%);
     }
 }
-
-
 .header-right {
     position: relative;
 }
@@ -61,7 +58,6 @@ button:hover {
         text-wrap: wrap;
     }
 }
-
 .icon-container {
     display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 12px;
     float: right;
@@ -105,7 +101,6 @@ main {
         }
     }
 }
-
 
 @media (min-width: 800px) {
     .header-card {
