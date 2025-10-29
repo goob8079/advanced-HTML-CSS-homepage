@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    margin: 0;
 }
 
 button {
@@ -23,7 +24,7 @@ button:hover {
 
 .header-card {
     display: flex; flex-direction: column; justify-content: center; align-items: center;
-    margin: 0 auto; padding: 12px;
+    margin: 12px auto; padding: 12px;
     border-radius: 12px;
     width: 90%;
     box-shadow: 5px 5px 5px 5px #888888;    
@@ -137,7 +138,6 @@ footer {
     .header-card {
         display: flex; flex-direction: row; justify-content: center; align-items: center;
         width: 95%;
-        margin: 0 auto;
     }
     
     .header-left {
